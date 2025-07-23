@@ -1,14 +1,14 @@
 import { Card, CardContent } from "../../ui/card";
 import { useLanguage } from "../../../contexts/LanguageContext";
-// Using placeholder image for demo - replace with actual image file
-const newCoupleImage = 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop';
+// Using Toyosuspots image
+const newCoupleImage = '/images/Toyosuspots.png';
 
 export function ServiceExplanation() {
   const { t } = useLanguage();
 
   return (
-    <Card className="border-0 bg-white shadow-xl overflow-hidden">
-      <CardContent className="p-0">
+    <Card className="border bg-white shadow-xl overflow-hidden">
+      <CardContent className="p-0 !pb-0">
         <div 
           className="relative min-h-[780px] bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${newCoupleImage})` }}

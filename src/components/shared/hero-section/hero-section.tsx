@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import { MapPin } from "lucide-react";
 import { ImageWithFallback } from "../figma/image-with-fallback/image-with-fallback";
 import { useLanguage } from "../../../contexts/LanguageContext";
-// Using placeholder images for demo - replace with actual image files
-const newToyosuImage = 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800&h=600&fit=crop';
-const lanternImage = 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&h=600&fit=crop';
-const yakitoriImage = 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&h=600&fit=crop';
-const tunaMarketImage = 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop';
+// Using actual Toyosu location images
+const toyosuImage1 = '/images/locations/toyosu/toyosu-photo-1.png';
+const toyosuImage2 = '/images/locations/toyosu/toyosu-photo-2.png';
+const toyosuImage3 = '/images/locations/toyosu/toyosu-photo-3.png';
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -14,20 +13,16 @@ export function HeroSection() {
 
   const images = [
     {
-      src: newToyosuImage,
-      alt: "Traditional Japanese street in Toyosu area"
+      src: toyosuImage1,
+      alt: "Toyosu area - Photo 1"
     },
     {
-      src: lanternImage,
-      alt: "Traditional Japanese lantern at restaurant in Toyosu"
+      src: toyosuImage2,
+      alt: "Toyosu area - Photo 2"
     },
     {
-      src: yakitoriImage,
-      alt: "Yakitori chefs preparing food at Toyosu market"
-    },
-    {
-      src: tunaMarketImage,
-      alt: "Tuna auction at Toyosu Fish Market"
+      src: toyosuImage3,
+      alt: "Toyosu area - Photo 3"
     }
   ];
 

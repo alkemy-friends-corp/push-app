@@ -39,7 +39,7 @@ export function AdminLogin() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4 mb-5">
             <div className="space-y-2">
               <Label htmlFor="username">ユーザー名</Label>
               <div className="relative">
@@ -83,13 +83,6 @@ export function AdminLogin() {
               {isLoading ? 'ログイン中...' : 'ログイン'}
             </Button>
           </form>
-          <div className="mt-4 p-3 bg-blue-50 rounded-lg">
-            <p className="text-sm text-blue-700">
-              <strong>デモ用ログイン情報:</strong><br />
-              ユーザー名: admin<br />
-              パスワード: admin123
-            </p>
-          </div>
         </CardContent>
       </Card>
     </div>
